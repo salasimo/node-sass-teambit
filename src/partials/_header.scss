@@ -1,0 +1,50 @@
+header {
+    padding: 0 30px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        border-bottom: 0.5px solid $color-brand;
+    }
+
+    .navbar {
+        @include flex-h-xy-centered;
+
+        li {
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-block;
+            padding: 4px 7px;
+            margin-right: 8px;
+        }
+
+        .sign-up button {
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 15px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            font-size: 14px;
+            background-color: $color-white;
+            border: 1px solid $color-secondary;
+            color: $color-secondary;
+            cursor: pointer;
+            transition: $transition-standard;
+
+            &:hover {
+                background-color: $color-secondary;
+                color: $color-white;
+            }
+
+            i.fa-google {
+                padding-right: 5px;
+            }
+        }
+    }
+
+    .logo img {
+        width: 120px;
+    }
+}

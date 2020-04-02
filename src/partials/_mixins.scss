@@ -1,12 +1,12 @@
 //centrature con flexbox
 //=====================
-@mixin flex-h-xy-centered{
+@mixin flex-h-xy-centered {
     display: flex;
     //row
     justify-content: center;
     align-items: center;
 }
-@mixin flex-v-yx-centered{
+@mixin flex-v-yx-centered {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,11 +14,14 @@
 }
 //fine centrature
 //================
-
 //bottone blu standard
-@mixin btn-blue{
-    background-color: $color-button;
+@mixin btn-blue {
+    border: none;
+    background-color: $color-secondary;
     color: $color-white;
-    padding: 10px 5px;
+    padding: 8px 10px;
+    border-radius: 8px;
     font-size: 14px;
+    cursor: pointer;
+    transition: $transition-standard;
 }

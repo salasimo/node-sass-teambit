@@ -1,1 +1,35 @@
+#page-container {
+    font-family: $font-style-brand;
+    font-weight: 500;
+    color: $color-brand;
+    width: 100vw;
+}
 
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-brand;
+    transition: $transition-standard;
+
+    &:hover {
+        color: $color-secondary;
+    }
+}
+
+.section {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.color-section {
+    background-color: $color-bg-section;
+}

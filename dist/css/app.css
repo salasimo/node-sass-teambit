@@ -1,14 +1,16 @@
-/*VARIABLES
+/* VARIABLES
 ==============*/
 
 /* Colors */
 
 /* Font */
 
-/*MIXINS
+/* Animations, Transitions & Timing */
+
+/* MIXINS
 ==============*/
 
-/*RESET
+/* RESET
 ==============*/
 
 * {
@@ -17,15 +19,173 @@
   box-sizing: border-box;
 }
 
-/*COMMON
+/* COMMON
 ==============*/
 
-/*HEADER
+#page-container {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #513c18;
+  width: 100vw;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #513c18;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #294894;
+}
+
+.section {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.color-section {
+  background-color: #ffe6cf;
+}
+
+/* HEADER
 ==============*/
 
-/*MAIN
+header {
+  padding: 0 30px;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 0.5px solid #513c18;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navbar li {
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 4px 7px;
+  margin-right: 8px;
+}
+
+header .navbar .sign-up button {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 15px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #294894;
+  color: #294894;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+header .navbar .sign-up button:hover {
+  background-color: #294894;
+  color: #fff;
+}
+
+header .navbar .sign-up button i.fa-google {
+  padding-right: 5px;
+}
+
+header .logo img {
+  width: 120px;
+}
+
+/* MAIN
 ==============*/
 
-/*FOOTER
+/* Intro Section */
+
+.intro-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.intro-section .wrapper h1.intro-title {
+  font-size: 46px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.6em;
+  padding-top: 40px;
+}
+
+.intro-section .wrapper p.intro-subtitle {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+
+.intro-section .wrapper .intro-sign-up-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.intro-section .wrapper .intro-sign-up-box button {
+  border: none;
+  background-color: #294894;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 0 12px;
+}
+
+.intro-section .wrapper .intro-sign-up-box button i {
+  margin-right: 8px;
+}
+
+.intro-section .wrapper .intro-sign-up-box button:hover {
+  background-color: #233569;
+}
+
+.intro-section .wrapper .intro-sign-up-box .second-line {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.intro-section .wrapper .intro-sign-up-box .second-line i {
+  margin-left: 8px;
+}
+
+.intro-section .wrapper .intro-sign-up-box span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* FOOTER
 ==============*/
 

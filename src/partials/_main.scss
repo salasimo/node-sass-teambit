@@ -1,0 +1,54 @@
+/* Intro Section */
+.intro-section .wrapper {
+    @include flex-v-yx-centered;
+    width: 70%;
+
+    h1.intro-title {
+        font-size: 46px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.6em;
+        padding-top: 40px;
+    }
+
+    p.intro-subtitle {
+        margin-top: 30px;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 1.6em;
+    }
+
+    .intro-sign-up-box {
+        @include flex-v-yx-centered;
+        padding: 40px 0;
+
+        button {
+            @include btn-blue;
+            margin: 0 12px;
+
+            i {
+                margin-right: 8px;
+            }
+
+            &:hover {
+                background-color: $color-btn-hover;
+            }
+        }
+
+        .second-line {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 400;
+
+            i {
+                margin-left: 8px;
+            }
+        }
+
+        span {
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+}
