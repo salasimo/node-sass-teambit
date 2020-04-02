@@ -2,7 +2,6 @@
 .intro-section .wrapper {
     @include flex-h-xy-centered;
 
-
     h1.intro-title {
         font-size: 46px;
         font-weight: 600;
@@ -19,50 +18,16 @@
         line-height: 1.6em;
     }
 
-    .intro-sign-up-box {
-        display: flex;
-        flex-direction: column;
-        padding: 40px 0;
-
-        button {
-            @include btn-blue;
-
-            i {
-                margin-right: 8px;
-            }
-
-            &:hover {
-                background-color: $color-btn-hover;
-            }
-        }
-
-        .second-line {
-            margin-top: 20px;
-            font-size: 14px;
-            font-weight: 400;
-
-            i {
-                margin-left: 8px;
-            }
-        }
-
-        span {
-            font-size: 12px;
-            font-weight: 400;
-            display: inline-block;
-            margin: 0 12px;
-        }
-    }
-
     img.intro-img {
         width: 100%;
         padding-left: 10%;
     }
 
-    .block-text{
-        width:45%;
+    .block-text {
+        width: 45%;
     }
-    .block-image{
+
+    .block-image {
         width: 55%;
     }
 }
@@ -103,5 +68,68 @@
     .h2-end {
         margin-top: 80px;
         margin-bottom: -40px;
+    }
+}
+/* Message Section */
+.section-message {
+    .wrapper {
+        @include flex-v-yx-centered;
+
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .message-box {
+            margin-top: 40px;
+            max-width: 660px;
+            padding: 20px 30px;
+            background-color: $color-white;
+            border: 1px solid #bdb5af;
+            border-radius: 6px;
+            position: relative;
+            i.fa-quote-left{
+                font-size: 40px;
+                color: $color-secondary;
+                position: absolute;
+                top:-23px;
+                left:-2px;
+                z-index:2;
+            }
+            p {
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
+            .founders-box{
+                display: flex;
+                align-items: center;
+
+                img{
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 10px;
+                }
+                .signs{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .names{
+                        margin-bottom:0;
+                        color: $color-secondary;
+                        font-size: 13px;
+                    }
+                    .role{
+                        margin-bottom:0;
+                        font-size: 11px;
+                    }
+
+                }
+
+
+            }
+        }
+
     }
 }

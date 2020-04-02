@@ -131,6 +131,54 @@ p {
   padding-right: 60px;
 }
 
+/* Sign up box */
+
+.sign-up-box {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+.sign-up-box button {
+  border: none;
+  background-color: #294894;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sign-up-box button i {
+  margin-right: 8px;
+}
+
+.sign-up-box button:hover {
+  background-color: #233569;
+}
+
+.sign-up-box .second-line {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sign-up-box .second-line i {
+  margin-left: 8px;
+}
+
+.sign-up-box span {
+  font-size: 12px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.final-sign-up-box {
+  align-items: center;
+}
+
 /* HEADER
 ==============*/
 
@@ -220,48 +268,6 @@ header .logo img {
   line-height: 1.6em;
 }
 
-.intro-section .wrapper .intro-sign-up-box {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0;
-}
-
-.intro-section .wrapper .intro-sign-up-box button {
-  border: none;
-  background-color: #294894;
-  color: #fff;
-  padding: 8px 10px;
-  border-radius: 8px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.intro-section .wrapper .intro-sign-up-box button i {
-  margin-right: 8px;
-}
-
-.intro-section .wrapper .intro-sign-up-box button:hover {
-  background-color: #233569;
-}
-
-.intro-section .wrapper .intro-sign-up-box .second-line {
-  margin-top: 20px;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.intro-section .wrapper .intro-sign-up-box .second-line i {
-  margin-left: 8px;
-}
-
-.intro-section .wrapper .intro-sign-up-box span {
-  font-size: 12px;
-  font-weight: 400;
-  display: inline-block;
-  margin: 0 12px;
-}
-
 .intro-section .wrapper img.intro-img {
   width: 100%;
   padding-left: 10%;
@@ -323,6 +329,73 @@ header .logo img {
 .traditional-section .h2-end {
   margin-top: 80px;
   margin-bottom: -40px;
+}
+
+/* Message Section */
+
+.section-message .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-message .wrapper h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.section-message .wrapper .message-box {
+  margin-top: 40px;
+  max-width: 660px;
+  padding: 20px 30px;
+  background-color: #fff;
+  border: 1px solid #bdb5af;
+  border-radius: 6px;
+  position: relative;
+}
+
+.section-message .wrapper .message-box i.fa-quote-left {
+  font-size: 40px;
+  color: #294894;
+  position: absolute;
+  top: -23px;
+  left: -2px;
+  z-index: 2;
+}
+
+.section-message .wrapper .message-box p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.section-message .wrapper .message-box .founders-box {
+  display: flex;
+  align-items: center;
+}
+
+.section-message .wrapper .message-box .founders-box img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.section-message .wrapper .message-box .founders-box .signs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-message .wrapper .message-box .founders-box .signs .names {
+  margin-bottom: 0;
+  color: #294894;
+  font-size: 13px;
+}
+
+.section-message .wrapper .message-box .founders-box .signs .role {
+  margin-bottom: 0;
+  font-size: 11px;
 }
 
 /* FOOTER

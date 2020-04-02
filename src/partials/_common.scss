@@ -102,3 +102,42 @@ p {
         }
     }
 }
+
+/* Sign up box */
+.sign-up-box {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+
+    button {
+        @include btn-blue;
+
+        i {
+            margin-right: 8px;
+        }
+
+        &:hover {
+            background-color: $color-btn-hover;
+        }
+    }
+
+    .second-line {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 400;
+
+        i {
+            margin-left: 8px;
+        }
+    }
+
+    span {
+        font-size: 12px;
+        font-weight: 400;
+        display: inline-block;
+        margin: 0 12px;
+    }
+}
+.final-sign-up-box{
+    align-items: center;
+}
