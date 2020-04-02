@@ -13,26 +13,26 @@
 //         }
 //     }
 // }
-
 /* Intro Section */
 @media screen and (max-width: 1150px) {
     .intro-section .wrapper {
         @include flex-v-yx-centered;
 
-        .block-text, .block-image{
+        .block-image,
+        .block-text {
             width: 100%;
-            max-width:650px;
+            max-width: 650px;
             text-align: center;
-            h1, p{
+
+            h1,
+            p {
                 text-align: center;
             }
-            img{
-                position: relative;
-                right:30px;
 
+            img {
+                position: relative;
+                right: 30px;
             }
         }
-
-
     }
 }

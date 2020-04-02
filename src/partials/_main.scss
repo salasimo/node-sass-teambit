@@ -89,47 +89,48 @@
             border: 1px solid #bdb5af;
             border-radius: 6px;
             position: relative;
-            i.fa-quote-left{
+
+            i.fa-quote-left {
                 font-size: 40px;
                 color: $color-secondary;
                 position: absolute;
-                top:-23px;
-                left:-2px;
-                z-index:2;
+                top: -23px;
+                left: -2px;
+                z-index: 2;
             }
+
             p {
                 margin-bottom: 20px;
                 font-size: 15px;
             }
-            .founders-box{
+
+            .founders-box {
                 display: flex;
                 align-items: center;
 
-                img{
+                img {
                     height: 40px;
                     width: 40px;
                     margin-right: 10px;
                 }
-                .signs{
+
+                .signs {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
 
-                    .names{
-                        margin-bottom:0;
+                    .names {
+                        margin-bottom: 0;
                         color: $color-secondary;
                         font-size: 13px;
                     }
-                    .role{
-                        margin-bottom:0;
+
+                    .role {
+                        margin-bottom: 0;
                         font-size: 11px;
                     }
-
                 }
-
-
             }
         }
-
     }
 }

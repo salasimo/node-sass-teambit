@@ -5,14 +5,14 @@ header {
     left: 0;
     right: 0;
     background-color: $color-white;
-    z-index:5;
+    z-index: 5;
+    border-bottom: 0.5px solid $color-brand;
 
     .wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 80px;
-        border-bottom: 0.5px solid $color-brand;
     }
 
     .navbar {

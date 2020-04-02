@@ -71,6 +71,12 @@ p {
 
 /*Lateral Common*/
 
+.lateral-section,
+.lateral-section.text-right {
+  display: flex;
+  justify-content: center;
+}
+
 .lateral-section .wrapper,
 .lateral-section.text-right .wrapper {
   display: flex;
@@ -190,6 +196,7 @@ header {
   right: 0;
   background-color: #fff;
   z-index: 5;
+  border-bottom: 0.5px solid #513c18;
 }
 
 header .wrapper {
@@ -197,7 +204,6 @@ header .wrapper {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  border-bottom: 0.5px solid #513c18;
 }
 
 header .navbar {
@@ -401,6 +407,65 @@ header .logo img {
 /* FOOTER
 ==============*/
 
+footer.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer.footer .wrapper .footer-claim {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+footer.footer .wrapper .footer-claim .footer-logo-box {
+  flex-basis: 60px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+footer.footer .wrapper .footer-claim .footer-logo-box img {
+  width: 100%;
+}
+
+footer.footer .wrapper .footer-claim p {
+  line-height: normal;
+  font-weight: 600;
+}
+
+footer.footer .wrapper .footer-menu {
+  width: 70%;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer.footer .wrapper .footer-menu li {
+  margin-bottom: 10px;
+}
+
+footer.footer .wrapper .footer-menu li a {
+  font-size: 13px;
+}
+
+footer.footer .wrapper .footer-menu li a i {
+  margin-left: 5px;
+}
+
+footer.footer .wrapper .footer-menu .column-menu {
+  width: 20%;
+  margin: 0 10px;
+}
+
+footer.footer .wrapper .footer-menu .title-menu {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 /* MEDIA QUERIES
 ==============*/
 
@@ -416,22 +481,22 @@ header .logo img {
     align-items: center;
   }
 
-  .intro-section .wrapper .block-text,
-  .intro-section .wrapper .block-image {
+  .intro-section .wrapper .block-image,
+  .intro-section .wrapper .block-text {
     width: 100%;
     max-width: 650px;
     text-align: center;
   }
 
-  .intro-section .wrapper .block-text h1,
-  .intro-section .wrapper .block-text p,
   .intro-section .wrapper .block-image h1,
-  .intro-section .wrapper .block-image p {
+  .intro-section .wrapper .block-image p,
+  .intro-section .wrapper .block-text h1,
+  .intro-section .wrapper .block-text p {
     text-align: center;
   }
 
-  .intro-section .wrapper .block-text img,
-  .intro-section .wrapper .block-image img {
+  .intro-section .wrapper .block-image img,
+  .intro-section .wrapper .block-text img {
     position: relative;
     right: 30px;
   }
