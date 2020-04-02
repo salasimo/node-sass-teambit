@@ -3,12 +3,19 @@
     font-weight: 500;
     color: $color-brand;
     width: 100vw;
+    min-width: 900px;
 }
 
 .wrapper {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 1.75;
+    max-width: 650px;
 }
 
 ul li {
@@ -27,9 +34,71 @@ a {
 
 .section {
     width: 100%;
-    padding: 50px 0;
+    padding: 90px 30px;
 }
 
 .color-section {
     background-color: $color-bg-section;
+}
+
+p {
+    line-height: 1.75;
+}
+/*Lateral Common*/
+.lateral-section,
+.lateral-section.text-right {
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
+        transform: translateX(-200px);
+        margin: -30px 0;
+        .side-out {
+            img.main-img {
+                width: 700px;
+            }
+        }
+
+        .side {
+            padding-left: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img.small-img {
+                width: 280px;
+                align-self: center;
+            }
+
+            h2 {
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+
+            a {
+                color: $color-secondary;
+                font-size: 20px;
+                margin-bottom: 30px;
+
+                i {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.lateral-section.text-left {
+    .wrapper {
+        transform: translateX(+200px);
+        flex-flow: row-reverse;
+
+        .side {
+            padding-left: 0;
+            padding-right: 60px;
+        }
+    }
 }

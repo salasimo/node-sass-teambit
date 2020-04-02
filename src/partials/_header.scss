@@ -1,5 +1,11 @@
 header {
     padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-white;
+    z-index:5;
 
     .wrapper {
         display: flex;

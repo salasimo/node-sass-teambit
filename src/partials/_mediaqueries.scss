@@ -1,0 +1,38 @@
+/* Lateral */
+// @media screen and (min-width: 900px) {
+//     .lateral-section .wrapper {
+//         img.main-img {
+//             right: 25vw;
+//         }
+//     }
+// }
+// @media screen and (min-width: 1100px) {
+//     .lateral-section .wrapper {
+//         img.main-img {
+//             width: 50%;
+//         }
+//     }
+// }
+
+/* Intro Section */
+@media screen and (max-width: 1150px) {
+    .intro-section .wrapper {
+        @include flex-v-yx-centered;
+
+        .block-text, .block-image{
+            width: 100%;
+            max-width:650px;
+            text-align: center;
+            h1, p{
+                text-align: center;
+            }
+            img{
+                position: relative;
+                right:30px;
+
+            }
+        }
+
+
+    }
+}

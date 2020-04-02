@@ -27,12 +27,19 @@
   font-weight: 500;
   color: #513c18;
   width: 100vw;
+  min-width: 900px;
 }
 
 .wrapper {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+h2 {
+  font-weight: 600;
+  line-height: 1.75;
+  max-width: 650px;
 }
 
 ul li {
@@ -51,11 +58,77 @@ a:hover {
 
 .section {
   width: 100%;
-  padding: 50px 0;
+  padding: 90px 30px;
 }
 
 .color-section {
   background-color: #ffe6cf;
+}
+
+p {
+  line-height: 1.75;
+}
+
+/*Lateral Common*/
+
+.lateral-section .wrapper,
+.lateral-section.text-right .wrapper {
+  display: flex;
+  align-items: flex-start;
+  transform: translateX(-200px);
+  margin: -30px 0;
+}
+
+.lateral-section .wrapper .side-out img.main-img,
+.lateral-section.text-right .wrapper .side-out img.main-img {
+  width: 700px;
+}
+
+.lateral-section .wrapper .side,
+.lateral-section.text-right .wrapper .side {
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lateral-section .wrapper .side img.small-img,
+.lateral-section.text-right .wrapper .side img.small-img {
+  width: 280px;
+  align-self: center;
+}
+
+.lateral-section .wrapper .side h2,
+.lateral-section.text-right .wrapper .side h2 {
+  margin-bottom: 20px;
+}
+
+.lateral-section .wrapper .side p,
+.lateral-section.text-right .wrapper .side p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.lateral-section .wrapper .side a,
+.lateral-section.text-right .wrapper .side a {
+  color: #294894;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.lateral-section .wrapper .side a i,
+.lateral-section.text-right .wrapper .side a i {
+  margin-left: 5px;
+}
+
+.lateral-section.text-left .wrapper {
+  transform: translateX(200px);
+  flex-flow: row-reverse;
+}
+
+.lateral-section.text-left .wrapper .side {
+  padding-left: 0;
+  padding-right: 60px;
 }
 
 /* HEADER
@@ -63,6 +136,12 @@ a:hover {
 
 header {
   padding: 0 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 5;
 }
 
 header .wrapper {
@@ -117,28 +196,26 @@ header .logo img {
 /* MAIN
 ==============*/
 
-/* Intro Section */
+/* Intro Section (#1) */
 
 .intro-section .wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
 }
 
 .intro-section .wrapper h1.intro-title {
   font-size: 46px;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   line-height: 1.6em;
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .intro-section .wrapper p.intro-subtitle {
   margin-top: 30px;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   font-weight: 400;
   line-height: 1.6em;
 }
@@ -146,8 +223,6 @@ header .logo img {
 .intro-section .wrapper .intro-sign-up-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 40px 0;
 }
 
@@ -160,7 +235,6 @@ header .logo img {
   font-size: 14px;
   cursor: pointer;
   transition: 0.3s ease;
-  margin: 0 12px;
 }
 
 .intro-section .wrapper .intro-sign-up-box button i {
@@ -184,8 +258,109 @@ header .logo img {
 .intro-section .wrapper .intro-sign-up-box span {
   font-size: 12px;
   font-weight: 400;
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.intro-section .wrapper img.intro-img {
+  width: 100%;
+  padding-left: 10%;
+}
+
+.intro-section .wrapper .block-text {
+  width: 45%;
+}
+
+.intro-section .wrapper .block-image {
+  width: 55%;
+}
+
+/* Section #2 Traditional + #3 Teammates */
+
+.teammates-section,
+.traditional-section {
+  border-bottom: 0.5px solid #513c18;
+}
+
+.teammates-section .wrapper,
+.traditional-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-width: 760px;
+  text-align: center;
+}
+
+.teammates-section .wrapper .small-images-3,
+.traditional-section .wrapper .small-images-3 {
+  margin: 60px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 140%;
+  max-width: 850px;
+}
+
+.teammates-section .wrapper .small-images-3 .block-image,
+.traditional-section .wrapper .small-images-3 .block-image {
+  margin: 0 10px;
+}
+
+.teammates-section .wrapper .small-images-3 .block-image img,
+.traditional-section .wrapper .small-images-3 .block-image img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.teammates-section .wrapper img.single-image,
+.traditional-section .wrapper img.single-image {
+  width: 280px;
+}
+
+.teammates-section .h2-end,
+.traditional-section .h2-end {
+  margin-top: 80px;
+  margin-bottom: -40px;
 }
 
 /* FOOTER
 ==============*/
+
+/* MEDIA QUERIES
+==============*/
+
+/* Lateral */
+
+/* Intro Section */
+
+@media screen and (max-width: 1150px) {
+  .intro-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-section .wrapper .block-text,
+  .intro-section .wrapper .block-image {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+  }
+
+  .intro-section .wrapper .block-text h1,
+  .intro-section .wrapper .block-text p,
+  .intro-section .wrapper .block-image h1,
+  .intro-section .wrapper .block-image p {
+    text-align: center;
+  }
+
+  .intro-section .wrapper .block-text img,
+  .intro-section .wrapper .block-image img {
+    position: relative;
+    right: 30px;
+  }
+}
 

@@ -1,31 +1,31 @@
-/* Intro Section */
+/* Intro Section (#1) */
 .intro-section .wrapper {
-    @include flex-v-yx-centered;
-    width: 70%;
+    @include flex-h-xy-centered;
+
 
     h1.intro-title {
         font-size: 46px;
         font-weight: 600;
-        text-align: center;
+        text-align: left;
         line-height: 1.6em;
-        padding-top: 40px;
+        padding-top: 100px;
     }
 
     p.intro-subtitle {
         margin-top: 30px;
         font-size: 20px;
-        text-align: center;
+        text-align: left;
         font-weight: 400;
         line-height: 1.6em;
     }
 
     .intro-sign-up-box {
-        @include flex-v-yx-centered;
+        display: flex;
+        flex-direction: column;
         padding: 40px 0;
 
         button {
             @include btn-blue;
-            margin: 0 12px;
 
             i {
                 margin-right: 8px;
@@ -49,6 +49,59 @@
         span {
             font-size: 12px;
             font-weight: 400;
+            display: inline-block;
+            margin: 0 12px;
         }
+    }
+
+    img.intro-img {
+        width: 100%;
+        padding-left: 10%;
+    }
+
+    .block-text{
+        width:45%;
+    }
+    .block-image{
+        width: 55%;
+    }
+}
+/* Section #2 Traditional + #3 Teammates */
+.teammates-section,
+.traditional-section {
+    border-bottom: 0.5px solid $color-brand;
+
+    .wrapper {
+        @include flex-v-yx-centered;
+        width: 70%;
+        max-width: 760px;
+        text-align: center;
+
+        .small-images-3 {
+            margin: 60px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            width: 140%;
+            max-width: 850px;
+
+            .block-image {
+                margin: 0 10px;
+
+                img {
+                    height: 100px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        img.single-image {
+            width: 280px;
+        }
+    }
+
+    .h2-end {
+        margin-top: 80px;
+        margin-bottom: -40px;
     }
 }
