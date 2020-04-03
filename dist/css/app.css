@@ -27,7 +27,7 @@
   font-weight: 500;
   color: #513c18;
   width: 100vw;
-  min-width: 900px;
+  min-width: 850px;
 }
 
 .wrapper {
@@ -256,6 +256,7 @@ header .logo img {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .intro-section .wrapper h1.intro-title {
